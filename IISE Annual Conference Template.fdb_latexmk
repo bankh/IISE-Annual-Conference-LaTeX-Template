@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex IISE Annual Conference Template"] 1763148672 "IISE Annual Conference Template.aux" "IISE Annual Conference Template.bbl" "IISE Annual Conference Template" 1763148681
+["bibtex IISE Annual Conference Template"] 1763148672 "IISE Annual Conference Template.aux" "IISE Annual Conference Template.bbl" "IISE Annual Conference Template" 1763149923
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "IISE Annual Conference Template.aux" 1763148681 1827 2063d012d94433d2e4d4ecd35087ed56 "pdflatex"
+  "IISE Annual Conference Template.aux" 1763149922 1827 2063d012d94433d2e4d4ecd35087ed56 "pdflatex"
   "references.bib" 1763148496 1307 2d27d8aa23a5444fb5054cf5b9abba67 ""
   (generated)
   "IISE Annual Conference Template.bbl"
   "IISE Annual Conference Template.blg"
-["pdflatex"] 1763148680 "/home/ubuntu/csu_phd/IISE-Annual-Conference-LaTex-Template/IISE Annual Conference Template.tex" "IISE Annual Conference Template.pdf" "IISE Annual Conference Template" 1763148681
+["pdflatex"] 1763149922 "/home/ubuntu/csu_phd/IISE-Annual-Conference-LaTex-Template/IISE Annual Conference Template.tex" "IISE Annual Conference Template.pdf" "IISE Annual Conference Template" 1763149923
   "/etc/texmf/web2c/texmf.cnf" 1747929451 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/ubuntu/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1763099255 11524 47840e95604fef2d5d5b0f61bc65015f ""
-  "/home/ubuntu/csu_phd/IISE-Annual-Conference-LaTex-Template/IISE Annual Conference Template.tex" 1763148680 13446 91cfa84c5e97ad7fb0cfb5ff7f2f8c2f ""
+  "/home/ubuntu/csu_phd/IISE-Annual-Conference-LaTex-Template/IISE Annual Conference Template.tex" 1763149922 13554 5d154442d21837e2685ca298265fbc5f ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -77,9 +77,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1758139517 164740 5f02460f8e29b549a9ea60117f5f46e4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758139519 1435852 ce8cd500b34ce8e7ff71d9b90d4a4622 ""
-  "IISE Annual Conference Template.aux" 1763148681 1827 2063d012d94433d2e4d4ecd35087ed56 "pdflatex"
-  "IISE Annual Conference Template.bbl" 1763148672 980 aa38ecda668539b90071de19a2bac9bc "bibtex IISE Annual Conference Template"
-  "IISE Annual Conference Template.tex" 1763148680 13446 91cfa84c5e97ad7fb0cfb5ff7f2f8c2f ""
+  "IISE Annual Conference Template.aux" 1763149922 1827 2063d012d94433d2e4d4ecd35087ed56 "pdflatex"
+  "IISE Annual Conference Template.bbl" 1763148690 980 aa38ecda668539b90071de19a2bac9bc "bibtex IISE Annual Conference Template"
+  "IISE Annual Conference Template.tex" 1763149922 13554 5d154442d21837e2685ca298265fbc5f ""
   (generated)
   "IISE Annual Conference Template.aux"
   "IISE Annual Conference Template.log"

@@ -17,6 +17,7 @@
 \usepackage{caption}         % For caption formatting
 \usepackage{parskip}         % For paragraph spacing
 \usepackage{enumitem}        % For bullet formatting
+\usepackage{etoolbox}        % For patching environments
 
 %%%%% Paragraph and Spacing Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setlength{\parindent}{0pt}          % No paragraph indentation
@@ -279,11 +280,14 @@ The IEEE style \cite{ieee2018} should be followed for references and citations f
 %%%%% OPTION 2: BibTeX (Recommended) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Using BibTeX for reference management (edit references.bib file)
 \bibliographystyle{ieeetr}
-% Remove spacing between bibliography items
+
+% Remove spacing between bibliography items to match IISE format
 \AtBeginEnvironment{thebibliography}{%
   \setlength{\itemsep}{0pt}%
   \setlength{\parskip}{0pt}%
+  \setlength{\parsep}{0pt}%
 }
+
 \bibliography{references}
 
 \end{document}
