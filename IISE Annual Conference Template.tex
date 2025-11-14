@@ -1,0 +1,238 @@
+\documentclass[10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% IISE Annual Conference Proceedings Template
+% Based on official IISE Annual Conference formatting guidelines
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% Page Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[letterpaper, margin=1in, headheight=25pt]{geometry}
+\usepackage{times}           % Times New Roman font
+\usepackage{graphicx}        % For figures
+\usepackage{amsmath}         % For equations
+\usepackage{cite}            % For IEEE style citations
+\usepackage{url}             % For URLs in references
+\usepackage{fancyhdr}        % For headers
+\usepackage{titlesec}        % For section formatting
+\usepackage{caption}         % For caption formatting
+\usepackage{parskip}         % For paragraph spacing
+\usepackage{enumitem}        % For bullet formatting
+
+%%%%% Paragraph and Spacing Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parindent}{0pt}          % No paragraph indentation
+\setlength{\parskip}{10pt}           % Single blank line between paragraphs
+\linespread{1.0}                     % Single line spacing
+\pagestyle{fancy}
+\fancyhf{}                           % Clear all headers and footers
+\renewcommand{\headrulewidth}{0pt}  % No header line
+\renewcommand{\footrulewidth}{0pt}  % No footer line
+
+%%%%% First Page Header (Conference Proceedings Editors' Information) %%%%%
+\fancypagestyle{firstpage}{%
+    \fancyhf{}
+    \fancyhead[L]{{\fontsize{10}{12}\selectfont 
+    Proceedings of the 2026 IISE Annual Conference \\
+    H. Xiao, H.E. Romeijn, Z. Shen, M. Zhou, eds.}}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+%%%%% Section Formatting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Main sections: Numbered, 12pt, bold, left-justified, one blank line above only
+\titleformat{\section}
+    {\normalfont\fontsize{12}{14}\bfseries\selectfont}
+    {\thesection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{10pt}{0pt}
+
+% Subsections: Numbered, 10pt, bold, left-justified
+\titleformat{\subsection}
+    {\normalfont\fontsize{10}{12}\bfseries\selectfont}
+    {\thesubsection}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{10pt}{0pt}
+
+% Subsubsections: Numbered, 10pt, bold, left-justified
+\titleformat{\subsubsection}
+    {\normalfont\fontsize{10}{12}\bfseries\selectfont}
+    {\thesubsubsection}{0.5em}{}
+\titlespacing*{\subsubsection}{0pt}{10pt}{0pt}
+
+%%%%% Caption Formatting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\captionsetup[table]{
+    position=top,
+    justification=centering,
+    singlelinecheck=true,
+    labelsep=colon,
+    font={normalsize},
+    skip=10pt
+}
+
+\captionsetup[figure]{
+    position=bottom,
+    justification=centering,
+    singlelinecheck=true,
+    labelsep=colon,
+    font={normalsize},
+    skip=10pt
+}
+
+%%%%% Bullet List Formatting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlist[itemize,1]{label=\textbullet, leftmargin=0.5in}
+\setlist[itemize,2]{label=\textopenbullet, leftmargin=0.75in}
+\setlist[itemize,3]{label=\textendash, leftmargin=1in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\thispagestyle{firstpage}
+
+%%%%% Title (16pt, bold, centered, Times New Roman) %%%%%%%%%%%%%%%%%%
+\begin{center}
+{\fontsize{16}{19}\bfseries\selectfont 
+Paper Title Goes Here: Use 16-Point, Times New Roman, Bold, Centered Font}
+
+%%%%% Abstract ID (12pt, bold, centered) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\fontsize{12}{14}\bfseries\selectfont Abstract ID: 1234}
+
+\end{center}
+
+%%%%% Placeholder for Author Information %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leave space for author names and organizations for final submission
+% This space ensures the 6-page limit is not exceeded after acceptance
+\vspace{10pt}
+
+%%%%% Abstract Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+{\fontsize{12}{14}\bfseries\selectfont Abstract}
+\end{center}
+
+{\fontsize{10}{12}\selectfont
+For the abstract section heading, use 12-point, Times New Roman, bold, centered font, followed by a single blank line. Then include the abstract for your paper (max 250 words), using 10-point, Times New Roman, full-justified font. The abstract should provide a concise summary of the paper's objectives, methods, results, and conclusions. Avoid using abbreviations, footnotes, or references in the abstract. Write in the third person and use past tense for completed work. The abstract is a standalone summary that allows readers to quickly understand the key contributions of your work.
+}
+
+%%%%% Keywords (12pt, bold, left-justified, NOT numbered) %%%%%%%%%%%%
+{\fontsize{12}{14}\bfseries\selectfont Keywords}\newline
+{\fontsize{10}{12}\selectfont
+Industrial engineering, operations research, stochastic processes
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MAIN BODY OF PAPER (10pt, Times New Roman, full-justified)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NOTE: Include three to five keywords. This Keywords section does not have a section number.
+
+\section{Page Layout}
+
+All papers are limited to 6 pages (including title and author data, references, and figures and tables) and should follow the following format and layout:
+
+Page Size: 8.5" x 11" (Letter). Top and bottom margins: 1.00". Left and right margins: 1.00". First page header: Conference proceedings editors' information (follow this template). Header (from pages two to six): No header for initial submission. The last names of the authors will be included in the header for accepted manuscripts during final submission.
+
+Spacing and Justification: Single line-spacing with full-justified text. Paragraphs: No indentation of paragraphs. Use a single blank line to separate paragraphs. No footers or page numbers.
+
+\section{Text Sections and Headings}
+
+Text should be organized into sections and subsections. A single line should separate paragraphs; no paragraph indentations should be used.
+
+Font guidelines are as follows: Section Headings: Numbered, 12-point, Times New Roman, bold, upper and lower case, left-justified. Leave one blank line above only. Section Sub-headings: Numbered, 10-point, Times New Roman, bold, upper and lower case, left-justified. Regular text: 10-point, Times New Roman, full-justified, with a single line between paragraphs.
+
+\subsection{Section Sub-headings}
+
+This is an example of a subsection with 10-point, Times New Roman, bold font. Leave one blank line between subsections.
+
+\subsubsection{Sub-subsection Example}
+
+This demonstrates a third-level heading, also 10-point, Times New Roman, bold.
+
+\subsection{Bullets}
+
+Bullet guidelines are as follows:
+
+\begin{itemize}
+    \item First level bullet
+    \begin{itemize}
+        \item Second level bullet
+        \begin{itemize}
+            \item Third level bullet
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\section{Figures, Tables, and Captions}
+
+Tables and figures should be included in the main text (see Figure~\ref{fig:example} and Table~\ref{tab:example}), as close to the point of their introduction as possible. Figure and table numbering should be independent.
+
+Table captions: 10-point, Times New Roman, centered (if a single line) or full-justified (if multiple lines). Place caption above the table; leave one blank line above and below the caption. For an example, see Table~\ref{tab:example} below.
+
+Figure captions: 10-point, Times New Roman, centered (if a single line) or full-justified (if multiple lines). Place caption below the figure; leave one blank line above and below. As an example, see Figure~\ref{fig:example} below.
+
+\begin{table}[h!]
+\centering
+\caption{Example table listing preventive maintenance parameters for an electric distribution case study}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Critical component (X$_n$)} & $\alpha_n$ & $\beta_n$ & $C_n^{PM}$ \\
+\hline
+Transmission System 2 & 2.0 & 1.5 & 7.5 \\
+Distribution Company 1 & 1.2 & 1.75 & 8.0 \\
+Distribution Company 2 & 1.0 & 1.75 & 12.0 \\
+Distribution Company 3 & 1.3 & 1.75 & 10.5 \\
+\hline
+\end{tabular}
+\label{tab:example}
+\end{table}
+
+This is an example paragraph to demonstrate the guidelines for the table (above) and figure (below).
+
+\begin{figure}[h!]
+\centering
+% Replace 'example-figure.pdf' with your actual figure file
+% Supported formats: .pdf, .png, .jpg
+\fbox{\parbox{0.6\textwidth}{\centering\vspace{1in}[Your Figure Here]\vspace{1in}}}
+% \includegraphics[width=0.6\textwidth]{example-figure.pdf}
+\caption{Example figure demonstrating (a, b) the concept of ultrasound-assisted 3D-biofabrication process, and (c, d) experimental results with aligned cells. A figure could include a single or multiple schematics, line and CAD drawings, photos, graphs etc. arranged in a concise layout. Labels within the figure should be legible.}
+\label{fig:example}
+\end{figure}
+
+\section{Equations}
+
+Equations should be centered and numbered in order of appearance. Place the equation number in parentheses, positioned flush to the right margin. Prepare equations with an Equation Writer; screenshots of equations should not be used. Leave one line before and after every equation. See Equation~(\ref{eq:example}) below as an example.
+
+\begin{equation}
+t_{align} = \frac{9\lambda\eta\rho_a}{2\pi kr^2 \Phi} \ln\left(\frac{\tan(kx_0)}{\tan(kx_f)}\right)
+\label{eq:example}
+\end{equation}
+
+As shown in Equation~(\ref{eq:example}), mathematical expressions should be properly formatted.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACKNOWLEDGEMENTS (No section number)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Acknowledgements}
+
+Acknowledgement of funding support and/or any other kind of assistance should be contained in an ``Acknowledgements'' section (this section should have no section number), located immediately before the ``References and Citations'' section.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REFERENCES (IEEE Style, No section number)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{References and Citations}
+
+The IEEE style {[}1{]} should be followed for references and citations for each manuscript submitted to the IISE Annual Conference. In brief, references are numbered sequentially by order of occurrence (not alphabetically) in the text and listed in a separate section labeled References (no section number) at the end of the manuscript. Within the text, they should be cited by the corresponding list number in square brackets {[}1{]}. When referring to two references, use this format {[}2, 3{]}. If you refer to more than two documents listed consecutively, use this format {[}2-4{]}. The following provides example formats for different types of reference documents.
+
+\vspace{10pt}
+
+{\fontsize{12}{14}\bfseries\selectfont References}
+
+\begin{thebibliography}{9}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+\bibitem{ieee2018}
+Institute of Electrical and Electronics Engineers, ``IEEE Reference Guide,'' IEEE Periodicals, V 11.12.2018, 2018. [Online]. Available: https://ieee-dataport.org/IEEECitationGuidelines.pdf. [Accessed September 16, 2020].
+\bibitem{yodo2016}
+N. Yodo, P. Wang, ``Resilience Allocation for Early Stage Design of Complex Engineered Systems,'' \textit{Journal of Mechanical Design}, vol. 138, no. 9, pp. 091402 (10 pages), July 2016, doi: 10.1115/1.4033990.
+\bibitem{tan2012}
+Z. Tan, R. A. Shirwaiker, ``A Review of the State of Art and Emerging Industrial and Systems Engineering Trends in Biomanufacturing,'' in \textit{Proceedings of 2012 Industrial and Systems Engineering Research Conference}, Orlando, FL, USA, May 19-23, 2012, pp. 2407-2414.
+\bibitem{chang2006}
+T. Chang, R. Wysk, H. Wang, \textit{Computer-Aided Manufacturing}, 3rd ed. Upper Saddle River, NJ, USA: Prentice Hall, 2006.
+\end{thebibliography}
+
+\end{document}
+
