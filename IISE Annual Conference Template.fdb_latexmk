@@ -1,10 +1,19 @@
 # Fdb version 3
-["pdflatex"] 1763100941 "/home/ubuntu/csu_phd/Paper-IISE2026-AnalyzeIISE/IISE-Analysis/template/IISE Annual Conference Template.tex" "IISE Annual Conference Template.pdf" "IISE Annual Conference Template" 1763100941
+["bibtex IISE Annual Conference Template"] 1763148672 "IISE Annual Conference Template.aux" "IISE Annual Conference Template.bbl" "IISE Annual Conference Template" 1763148681
+  "/usr/share/texlive/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
+  "IISE Annual Conference Template.aux" 1763148681 1827 2063d012d94433d2e4d4ecd35087ed56 "pdflatex"
+  "references.bib" 1763148496 1307 2d27d8aa23a5444fb5054cf5b9abba67 ""
+  (generated)
+  "IISE Annual Conference Template.bbl"
+  "IISE Annual Conference Template.blg"
+["pdflatex"] 1763148680 "/home/ubuntu/csu_phd/IISE-Annual-Conference-LaTex-Template/IISE Annual Conference Template.tex" "IISE Annual Conference Template.pdf" "IISE Annual Conference Template" 1763148681
   "/etc/texmf/web2c/texmf.cnf" 1747929451 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/ubuntu/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1763099255 11524 47840e95604fef2d5d5b0f61bc65015f ""
-  "/home/ubuntu/csu_phd/Paper-IISE2026-AnalyzeIISE/IISE-Analysis/template/IISE Annual Conference Template.tex" 1763100941 11930 01571d90a8e76184446710039693c28e ""
+  "/home/ubuntu/csu_phd/IISE-Annual-Conference-LaTex-Template/IISE Annual Conference Template.tex" 1763148680 13446 91cfa84c5e97ad7fb0cfb5ff7f2f8c2f ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1136768653 1292 bd42be2f344128bff6d35d98474adfe3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm" 1136768653 4524 6bce29db5bc272ba5f332261583fee9c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm" 1136768653 2124 2601a75482e9426d33db523edf23570a ""
@@ -19,9 +28,11 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb" 1136849748 45758 19968a0990191524e34e1994d4a31cb6 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1136849748 46026 6dab18b61c907687b520c72847215a68 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb" 1136849748 45458 a3faba884469519614ca56ba5f6b1de1 ""
+  "/usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf" 1136768653 1344 6ff472164bf9de0fb2e864b28ac156d9 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf" 1136768653 1372 788387fea833ef5963f4c5bffe33eb89 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf" 1136768653 1380 0ea3a3370054be6da6acd929ec569f06 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf" 1136768653 3556 8a9a6dcbcd146ef985683f677f4758a6 ""
@@ -56,6 +67,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1642022539 29921 f0f4f870357ebfb8fe58ed9ed4ee9b92 ""
   "/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty" 1615762720 4288 94714aa7f535440f33181fec52a31963 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd" 1137110629 985 1ed784d7bfe47179f3550d2303b073f8 ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1137110629 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty" 1586716065 856 8e0e5c8cca7b18e0400f97f5a2b90a99 ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd" 1137110629 619 96f56dc5d1ef1fe1121f1cfeec70ee0c ""
@@ -65,8 +77,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1758139517 164740 5f02460f8e29b549a9ea60117f5f46e4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758139519 1435852 ce8cd500b34ce8e7ff71d9b90d4a4622 ""
-  "IISE Annual Conference Template.aux" 1763100941 1672 ac04920691e87bb41212eade327dd5d7 "pdflatex"
-  "IISE Annual Conference Template.tex" 1763100941 11930 01571d90a8e76184446710039693c28e ""
+  "IISE Annual Conference Template.aux" 1763148681 1827 2063d012d94433d2e4d4ecd35087ed56 "pdflatex"
+  "IISE Annual Conference Template.bbl" 1763148672 980 aa38ecda668539b90071de19a2bac9bc "bibtex IISE Annual Conference Template"
+  "IISE Annual Conference Template.tex" 1763148680 13446 91cfa84c5e97ad7fb0cfb5ff7f2f8c2f ""
   (generated)
   "IISE Annual Conference Template.aux"
   "IISE Annual Conference Template.log"

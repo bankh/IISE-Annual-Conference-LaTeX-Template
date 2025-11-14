@@ -80,22 +80,55 @@
 \setlist[itemize,3]{label=\textendash, leftmargin=1in}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% Blind Review Flag %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set to 0 for non-blind (with author info), 1 for blind review
+\def\blind{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 \thispagestyle{firstpage}
 
-%%%%% Title (16pt, bold, centered, Times New Roman) %%%%%%%%%%%%%%%%%%
+%%%%% Title and Author Information %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\if0\blind
+% NON-BLIND VERSION: Show title, Abstract ID, and author information
 \begin{center}
 {\fontsize{16}{19}\bfseries\selectfont 
 Paper Title Goes Here: Use 16-Point, Times New Roman, Bold, Centered Font}
 
-%%%%% Abstract ID (12pt, bold, centered) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{10pt}
+
 {\fontsize{12}{14}\bfseries\selectfont Abstract ID: 1234}
 
-\end{center}
+\vspace{10pt}
 
-%%%%% Placeholder for Author Information %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Leave space for author names and organizations for final submission
-% This space ensures the 6-page limit is not exceeded after acceptance
+% Author information (shown in non-blind version)
+{\fontsize{10}{12}\selectfont
+Author Name$^{a}$ and Co-Author Name$^{b}$ \\
+\vspace{5pt}
+$^{a}$Department Name, University Name, City, Country \\
+$^{b}$Department Name, University Name, City, Country}
+\end{center}
+\fi
+
+\if1\blind
+% BLIND VERSION: Show only title and Abstract ID, no authors
+\begin{center}
+{\fontsize{16}{19}\bfseries\selectfont 
+Paper Title Goes Here: Use 16-Point, Times New Roman, Bold, Centered Font}
+
+\vspace{10pt}
+
+{\fontsize{12}{14}\bfseries\selectfont Abstract ID: 1234}
+
+\vspace{10pt}
+
+% Placeholder space for author information (to maintain consistent spacing)
+{\fontsize{10}{12}\selectfont Author information is purposely removed for blind review}
+\end{center}
+\fi
+
 \vspace{10pt}
 
 %%%%% Abstract Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -120,7 +153,7 @@ Industrial engineering, operations research, stochastic processes
 
 \section{Page Layout}
 
-All papers are limited to 6 pages (including title and author data, references, and figures and tables) and should follow the following format and layout:
+All papers are limited to 6 pages (including title and author data, references, and figures and tables) and should follow the following format and layout. Use the \verb|\cite{}| command to reference sources \cite{chang2006}:
 
 Page Size: 8.5" x 11" (Letter). Top and bottom margins: 1.00". Left and right margins: 1.00". First page header: Conference proceedings editors' information (follow this template). Header (from pages two to six): No header for initial submission. The last names of the authors will be included in the header for accepted manuscripts during final submission.
 
@@ -207,7 +240,15 @@ As shown in Equation~(\ref{eq:example}), mathematical expressions should be prop
 
 \section*{Acknowledgements}
 
+\if0\blind
+% NON-BLIND VERSION: Include acknowledgements with specific details
 Acknowledgement of funding support and/or any other kind of assistance should be contained in an ``Acknowledgements'' section (this section should have no section number), located immediately before the ``References and Citations'' section.
+\fi
+
+\if1\blind
+% BLIND VERSION: Anonymized acknowledgements
+Acknowledgements are purposely removed for blind review to maintain anonymity.
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % REFERENCES (IEEE Style, No section number)
@@ -215,24 +256,35 @@ Acknowledgement of funding support and/or any other kind of assistance should be
 
 \section*{References and Citations}
 
-The IEEE style {[}1{]} should be followed for references and citations for each manuscript submitted to the IISE Annual Conference. In brief, references are numbered sequentially by order of occurrence (not alphabetically) in the text and listed in a separate section labeled References (no section number) at the end of the manuscript. Within the text, they should be cited by the corresponding list number in square brackets {[}1{]}. When referring to two references, use this format {[}2, 3{]}. If you refer to more than two documents listed consecutively, use this format {[}2-4{]}. The following provides example formats for different types of reference documents.
+The IEEE style \cite{ieee2018} should be followed for references and citations for each manuscript submitted to the IISE Annual Conference. In brief, references are numbered sequentially by order of occurrence (not alphabetically) in the text and listed in a separate section labeled References (no section number) at the end of the manuscript. Within the text, they should be cited by the corresponding list number in square brackets. When referring to two references, use this format \cite{yodo2016,tan2012}. If you refer to more than two documents listed consecutively, use this format \cite{ieee2018,yodo2016,tan2012,chang2006}. The following provides example formats for different types of reference documents.
 
 \vspace{10pt}
 
-{\fontsize{12}{14}\bfseries\selectfont References}
+%%%%% OPTION 1: Inline Bibliography (Manual) %%%%%%%%%%%%%%%%%%%%%%%%%
+% Uncomment the section below if you prefer inline references:
 
-\begin{thebibliography}{9}
-\setlength{\itemsep}{0pt}
-\setlength{\parskip}{0pt}
-\bibitem{ieee2018}
-Institute of Electrical and Electronics Engineers, ``IEEE Reference Guide,'' IEEE Periodicals, V 11.12.2018, 2018. [Online]. Available: https://ieee-dataport.org/IEEECitationGuidelines.pdf. [Accessed September 16, 2020].
-\bibitem{yodo2016}
-N. Yodo, P. Wang, ``Resilience Allocation for Early Stage Design of Complex Engineered Systems,'' \textit{Journal of Mechanical Design}, vol. 138, no. 9, pp. 091402 (10 pages), July 2016, doi: 10.1115/1.4033990.
-\bibitem{tan2012}
-Z. Tan, R. A. Shirwaiker, ``A Review of the State of Art and Emerging Industrial and Systems Engineering Trends in Biomanufacturing,'' in \textit{Proceedings of 2012 Industrial and Systems Engineering Research Conference}, Orlando, FL, USA, May 19-23, 2012, pp. 2407-2414.
-\bibitem{chang2006}
-T. Chang, R. Wysk, H. Wang, \textit{Computer-Aided Manufacturing}, 3rd ed. Upper Saddle River, NJ, USA: Prentice Hall, 2006.
-\end{thebibliography}
+% \begin{thebibliography}{9}
+% \setlength{\itemsep}{0pt}
+% \setlength{\parskip}{0pt}
+% \bibitem{ieee2018}
+% Institute of Electrical and Electronics Engineers, ``IEEE Reference Guide,'' IEEE Periodicals, V 11.12.2018, 2018. [Online]. Available: https://ieee-dataport.org/IEEECitationGuidelines.pdf. [Accessed September 16, 2020].
+% \bibitem{yodo2016}
+% N. Yodo, P. Wang, ``Resilience Allocation for Early Stage Design of Complex Engineered Systems,'' \textit{Journal of Mechanical Design}, vol. 138, no. 9, pp. 091402 (10 pages), July 2016, doi: 10.1115/1.4033990.
+% \bibitem{tan2012}
+% Z. Tan, R. A. Shirwaiker, ``A Review of the State of Art and Emerging Industrial and Systems Engineering Trends in Biomanufacturing,'' in \textit{Proceedings of 2012 Industrial and Systems Engineering Research Conference}, Orlando, FL, USA, May 19-23, 2012, pp. 2407-2414.
+% \bibitem{chang2006}
+% T. Chang, R. Wysk, H. Wang, \textit{Computer-Aided Manufacturing}, 3rd ed. Upper Saddle River, NJ, USA: Prentice Hall, 2006.
+% \end{thebibliography}
+
+%%%%% OPTION 2: BibTeX (Recommended) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Using BibTeX for reference management (edit references.bib file)
+\bibliographystyle{ieeetr}
+% Remove spacing between bibliography items
+\AtBeginEnvironment{thebibliography}{%
+  \setlength{\itemsep}{0pt}%
+  \setlength{\parskip}{0pt}%
+}
+\bibliography{references}
 
 \end{document}
 
