@@ -6,7 +6,7 @@
 % Date: 2025-11-14
 % Version: 1.0
 % License: CC BY 4.0
-% Repository: https://github.com/bankh/IISE-Annual-Conference-LaTex-Template
+% Repository: https://github.com/bankh/IISE-Annual-Conference-LaTeX-Template
 % Author: Sinan Bank
 % Email: sinan.bank@colostate.edu
 % Description: This template is based on the official IISE Annual Conference formatting guidelines.
@@ -21,12 +21,23 @@
 \usepackage{amsmath}         % For equations
 \usepackage{cite}            % For IEEE style citations
 \usepackage{url}             % For URLs in references
+\usepackage{hyperref}        % For clickable links in bibliography
 \usepackage{fancyhdr}        % For headers
 \usepackage{titlesec}        % For section formatting
 \usepackage{caption}         % For caption formatting
 \usepackage{parskip}         % For paragraph spacing
 \usepackage{enumitem}        % For bullet formatting
 \usepackage{etoolbox}        % For patching environments
+
+%%%%% Hyperref Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Configure hyperref to make bibliography links clickable without changing appearance
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black,
+    pdfborder={0 0 0}
+}
 
 %%%%% Paragraph and Spacing Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setlength{\parindent}{0pt}          % No paragraph indentation
@@ -42,7 +53,7 @@
     \fancyhf{}
     \fancyhead[L]{{\fontsize{10}{12}\selectfont 
     Proceedings of the 2026 IISE Annual Conference \\
-    [Editors' names to be added]}}
+    H. Xiao, H.E. Romeijn, Z. Shen, M. Zhou, eds.}}
     \renewcommand{\headrulewidth}{0pt}
 }
 
@@ -203,12 +214,11 @@ Bullet guidelines are as follows:
 
 \section{Figures, Tables, and Captions}
 
-Tables and figures should be included in the main text (see Figure~\ref{fig:example} and Table~\ref{tab:example}), as close to the point of their introduction as possible. Figure and table numbering should be independent. Captions guidelines are as follows:
+Tables and figures should be included in the main text (see Figure~\ref{fig:example} and Table~\ref{tab:example}), as close to the point of their introduction as possible. Figure and table numbering should be independent.
 
-\begin{itemize}
-    \item Table captions: 10-point, Times New Roman, centered (if a single line) or full-justified (if multiple lines). Place caption above the table; leave one blank line above and below the caption. For an example, see Table~\ref{tab:example} below.
-    \item Figure captions: 10-point, Times New Roman, centered (if a single line) or full-justified (if multiple lines). Place caption below the figure; leave one blank line above and below. As an example, see Figure~\ref{fig:example} below.
-\end{itemize}
+Table captions: 10-point, Times New Roman, centered (if a single line) or full-justified (if multiple lines). Place caption above the table; leave one blank line above and below the caption. For an example, see Table~\ref{tab:example} below.
+
+Figure captions: 10-point, Times New Roman, centered (if a single line) or full-justified (if multiple lines). Place caption below the figure; leave one blank line above and below. As an example, see Figure~\ref{fig:example} below.
 
 \begin{table}[h!]
 \centering
@@ -234,7 +244,7 @@ This is an example paragraph to demonstrate the guidelines for the table (above)
 % Supported formats: .pdf, .png, .jpg
 \fbox{\parbox{0.6\textwidth}{\centering\vspace{1in}[Your Figure Here]\vspace{1in}}}
 % \includegraphics[width=0.6\textwidth]{example-figure.pdf}
-\caption{Example figure demonstrating (a, b) the concept of ultrasound-assisted 3D-biofabrication process, and (c, d) experimental results with aligned cells. A figure could include a single or multiple schematics, line and CAD drawings, photos, graphs etc. arranged in a concise layout. Labels within the figure should be legible. Paragraph text and captions should not be wrapped around the figure.}
+\caption{Example figure demonstrating (a, b) the concept of ultrasound-assisted 3D-biofabrication process, and (c, d) experimental results with aligned cells. A figure could include a single or multiple schematics, line and CAD drawings, photos, graphs etc. arranged in a concise layout. Labels within the figure should be legible.}
 \label{fig:example}
 \end{figure}
 
