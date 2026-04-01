@@ -112,7 +112,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%% Final Submission Flag %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Set to 1 for final submission (adds author last names in header on pages 2+)
+% Set to 1 for final submission (adds author last names in header on pages 2+, hides Abstract ID)
 \def\final{0}
 \if1\final
     \fancyhead[C]{\textit{No Author Last Names Yet}}  % Replace with author last names
@@ -125,16 +125,18 @@
 %%%%% Title and Author Information %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \if0\blind
-% NON-BLIND VERSION: Show title, Abstract ID, and author information
+% NON-BLIND VERSION: Show title and author information (Abstract ID only for initial submission)
 \begin{center}
-{\fontsize{16}{19}\bfseries\selectfont 
+{\fontsize{16}{19}\bfseries\selectfont
 Paper Title Goes Here: Use 16-Point, Times New Roman, Bold, Centered Font}
 
 \vspace{10pt}
 
+\if0\final
 {\fontsize{12}{14}\bfseries\selectfont Abstract ID: 1234}
 
 \vspace{10pt}
+\fi
 
 % Author information (shown in non-blind version)
 {\fontsize{10}{12}\selectfont
@@ -146,16 +148,18 @@ $^{b}$Department Name, University Name, City, Country}
 \fi
 
 \if1\blind
-% BLIND VERSION: Show only title and Abstract ID, no authors
+% BLIND VERSION: Show only title, no authors (Abstract ID only for initial submission)
 \begin{center}
-{\fontsize{16}{19}\bfseries\selectfont 
+{\fontsize{16}{19}\bfseries\selectfont
 Paper Title Goes Here: Use 16-Point, Times New Roman, Bold, Centered Font}
 
 \vspace{10pt}
 
+\if0\final
 {\fontsize{12}{14}\bfseries\selectfont Abstract ID: 1234}
 
 \vspace{10pt}
+\fi
 
 % Placeholder space for author information (to maintain consistent spacing)
 {\fontsize{10}{12}\selectfont Author information is purposely removed for blind review}
