@@ -111,6 +111,14 @@
 \def\blind{1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%% Final Submission Flag %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set to 1 for final submission (adds author last names in header on pages 2+)
+\def\final{0}
+\if1\final
+    \fancyhead[C]{\textit{No Author Last Names Yet}}  % Replace with author last names
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 \thispagestyle{firstpage}
 
