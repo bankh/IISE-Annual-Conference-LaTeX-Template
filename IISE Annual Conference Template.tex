@@ -28,6 +28,7 @@
 \usepackage{parskip}         % For paragraph spacing
 \usepackage{enumitem}        % For bullet formatting
 \usepackage{etoolbox}        % For patching environments
+\usepackage{microtype}       % Microtypography
 
 %%%%% Hyperref Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Configure hyperref to make bibliography links clickable without changing appearance
@@ -120,6 +121,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+\microtypesetup{nopatch=item}
 \thispagestyle{firstpage}
 
 %%%%% Title and Author Information %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -167,6 +169,7 @@ Paper Title Goes Here: Use 16-Point, Times New Roman, Bold, Centered Font}
 \fi
 
 \vspace{10pt}
+\microtypesetup{patch=item}
 
 %%%%% Abstract Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{center}
